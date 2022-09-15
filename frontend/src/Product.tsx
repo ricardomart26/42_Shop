@@ -4,7 +4,7 @@ type ProductObj = {item : {
     id: Number,
     name: String,
     price: Number,
-    date: Number,
+    date: String,
     amount: Number,
     description: String
 }}
