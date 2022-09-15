@@ -16,13 +16,15 @@ class Product extends React.Component<ProductObj, {}> {
         console.log(this.props.item);
     }
     render() {
+        const divStyle = {border: '2px solid green', width:'40%', listStyleType:'none'};
+        const h1Style = {color : 'blue', fontSize:'23px'};
         return (
-            <div>
-                <h1> {this.props.item.name} </h1>
+            <div style={divStyle}> 
+                <h1> {this.props.item.name} </h1> 
                 <p> Description: {this.props.item.description}</p>
-                <h1> Price: {this.props.item.price.toString()}</h1>
-                <h1> Date: {this.props.item.date.toString()}</h1>
-                <h1> Amount: {this.props.item.amount.toString()}</h1>
+                <h1 style={h1Style}> Price: {this.props.item.price.toString()}</h1>
+                <h1 style={h1Style} > Date: {this.props.item.date.toString()}</h1>
+                <h1 style={h1Style}> Amount: {this.props.item.amount.toString()}</h1>
             </div>
         );
     }
